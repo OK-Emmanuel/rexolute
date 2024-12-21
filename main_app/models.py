@@ -4,7 +4,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 # Setting up auth for the user
-class user(AbstractUser):
+class User(AbstractUser):
     is_therrapist = models.BooleanField(default=False)
 
 class TherapistProfile(models.Model):
