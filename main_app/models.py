@@ -5,7 +5,7 @@ from django.dispatch import receiver
 
 # Setting up auth for the user
 class User(AbstractUser):
-    is_therrapist = models.BooleanField(default=False)
+    is_therapist = models.BooleanField(default=False)
 
 class TherapistProfile(models.Model):
     user = models.OneToOneField('main_app.user', on_delete=models.CASCADE, related_name='therapist_profile')
